@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import util.NumberTextField?>
+<?import java.net.URL?>
+<?import util.DateTimePicker?>
+
+<?import java.lang.String?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="organizer.impl.CreateEventView">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+    <top>
+        <Text text="Create New Event" fx:id="title"/>
+    </top>
+    <center>
+        <Accordion>
+            <panes>
+                <TitledPane text="Step 1" fx:id="step1">
+                    <GridPane alignment="CENTER" hgap="10" vgap="10">
+                        <Text text="Enter initial details" GridPane.columnIndex="0" GridPane.rowIndex="0"
+                              GridPane.columnSpan="2"/>
+                        <Label text="Event Name:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                        <TextField fx:id="eventName" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                        <Label text="Capacity:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                        <NumberTextField fx:id="capacity" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        <Label text="Required Amenities:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                        <CheckBox fx:id="amenity1" text="Chairs" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                        <CheckBox fx:id="amenity2" text="Tables" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+                        <CheckBox fx:id="amenity3" text="Projector" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+                        <CheckBox fx:id="amenity4" text="Sound System" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+                        <Label text="Is VIP Event:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+                        <ChoiceBox fx:id="vipEvent" value="No" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                            <String fx:value="Yes"/>
+                            <String fx:value="No"/>
+                        </ChoiceBox>
+                        <Text fx:id="resultText1" GridPane.columnIndex="0" GridPane.rowIndex="9" GridPane.columnSpan="2"/>
+
+                        <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="11"
+                              GridPane.columnSpan="2">
+                            <Button text="Next Step" fx:id="findRoomsButton" onAction="#executeAddFindRooms"/>
+                        </HBox>
+                    </GridPane>
+                </TitledPane>
+                <TitledPane text="Step 2" fx:id="step2" disable="true">
+                    <GridPane alignment="CENTER" hgap="10" vgap="10">
+                        <Text text="Choose room and enter start/end" GridPane.columnIndex="0"
+                              GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+                        <Label text="Suggested Rooms:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                        <ComboBox fx:id="roomName" GridPane.columnIndex="1" GridPane.rowIndex="2" editable="true"/>
+                        <Label text="Start:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                        <DateTimePicker fx:id="eventStart" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        <Label text="End:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                        <DateTimePicker fx:id="eventEnd" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                        <Text fx:id="resultText2" GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="5"/>
+
+                        <VBox fx:id="tableContainer" GridPane.columnIndex="0" GridPane.rowIndex="7"
+                              GridPane.columnSpan="2"/>
+
+                        <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="11"
+                              GridPane.columnSpan="2">
+                            <Button text="Previous Step" fx:id="previousButton1" onAction="#executeAddPreviousFirst"/>
+                            <Button text="Preview Room's Schedule" fx:id="previewRoomButton"
+                                    onAction="#executeAddPreviewRoom"/>
+                            <Button text="Next Step" fx:id="summaryButton" onAction="#executeAddEventSummary"/>
+                        </HBox>
+                    </GridPane>
+                </TitledPane>
+                <TitledPane text="Step 3" fx:id="step3" disable="true">
+                    <GridPane alignment="CENTER" hgap="10" vgap="10">
+                        <Text text="Summary" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+                        <Label text="Event Name:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                        <Text fx:id="summaryEventName" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                        <Label text="Capacity:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                        <Text fx:id="summaryCapacity" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        <Label text="Room Name:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                        <Text fx:id="summaryRoomName" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                        <Label text="Start:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+                        <Text fx:id="summaryStart" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+                        <Label text="End:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+                        <Text fx:id="summaryEnd" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+                        <Label text="Required Amenities:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+                        <Text fx:id="summaryAmenities" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+                        <Label text="Is VIP Event:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+                        <Text fx:id="summaryVipEvent" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+                        <Text fx:id="resultText3" GridPane.columnIndex="0" GridPane.columnSpan="2"
+                              GridPane.rowIndex="9"/>
+
+                        <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="11"
+                              GridPane.columnSpan="2">
+                            <Button text="Previous Step" fx:id="previousButton2" onAction="#executeAddPreviousSecond"/>
+                            <Button text="Create Event" fx:id="createButton" onAction="#executeAddCreateEvent"/>
+                        </HBox>
+                    </GridPane>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </center>
+
+    <stylesheets>
+        <URL value="@../css/project.css"/>
+        <URL value="@../css/createNew.css"/>
+    </stylesheets>
+</BorderPane>

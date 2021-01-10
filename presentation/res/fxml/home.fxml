@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="home.impl.HomeView" >
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <Text text="Hello" fx:id="title" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Button fx:id="unreadButton" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button fx:id="attendingButton" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+    <stylesheets>
+        <URL value="@../css/project.css"/>
+        <URL value="@../css/home.css"/>
+    </stylesheets>
+</GridPane>

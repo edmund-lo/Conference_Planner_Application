@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0" minWidth="0" prefHeight="900" prefWidth="1600"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="admin.impl.UnlockAccountsView">
+    <top>
+        <Text text="Unlock User Accounts" fx:id="title" />
+    </top>
+    <center>
+        <SplitPane>
+            <padding>
+                <Insets top="25" right="25" bottom="25" left="25"/>
+            </padding>
+            <TableView fx:id="userTable">
+                <columns>
+                    <TableColumn fx:id="usernameColumn" text="Username"/>
+                    <TableColumn fx:id="userTypeColumn" text="User Type"/>
+                    <TableColumn fx:id="lockedColumn" text="Locked"/>
+                </columns>
+            </TableView>
+            <SplitPane orientation="VERTICAL">
+                <VBox>
+                    <Text text="User Login Logs"/>
+                    <TableView fx:id="logsTable">
+                        <columns>
+                            <TableColumn fx:id="loginTimeColumn" text="Login Time"/>
+                            <TableColumn fx:id="successColumn" text="Success"/>
+                        </columns>
+                    </TableView>
+                </VBox>
+                <GridPane alignment="CENTER" hgap="10" vgap="10">
+                    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                    <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="0" editable="false"/>
+                    <Label text="To:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                    <TextField fx:id="userType" GridPane.columnIndex="1" GridPane.rowIndex="1" editable="false"/>
+                    <Text fx:id="resultText" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+
+                    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="4"
+                          GridPane.columnSpan="2">
+                        <Button text="Unlock Account" fx:id="unlockButton" onAction="#executeAddUnlock" disable="true"/>
+                    </HBox>
+                </GridPane>
+            </SplitPane>
+        </SplitPane>
+    </center>
+
+    <stylesheets>
+        <URL value="@../css/project.css"/>
+        <URL value="@../css/unlock.css"/>
+    </stylesheets>
+</BorderPane>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<?import java.net.URL?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0" minWidth="0" prefHeight="900" prefWidth="1600"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="attendee.impl.FriendsView">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <top>
+        <Text text="Friends" fx:id="title"/>
+    </top>
+    <center>
+        <TabPane>
+            <Tab text="Friends" closable="false">
+                <SplitPane>
+                    <VBox>
+                        <Text text="All Friends"/>
+                        <TableView fx:id="friendTable">
+                            <columns>
+                                <TableColumn text="First Name" fx:id="firstNameFriendColumn"/>
+                                <TableColumn text="Last Name" fx:id="lastNameFriendColumn"/>
+                                <TableColumn text="Username" fx:id="usernameFriendColumn"/>
+                                <TableColumn text="User Type" fx:id="userTypeFriendColumn"/>
+                            </columns>
+                        </TableView>
+                    </VBox>
+                    <SplitPane orientation="VERTICAL">
+                        <GridPane alignment="CENTER" hgap="10" vgap="10">
+                            <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                            <Text fx:id="usernameFriend" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                            <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                            <Text fx:id="firstNameFriend" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                            <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                            <Text fx:id="lastNameFriend" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                            <Label text="User Type:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                            <Text fx:id="userTypeFriend" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                            <Text fx:id="resultText1" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+
+                            <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="6"
+                                  GridPane.columnSpan="2">
+                                <Button text="Remove Friend" fx:id="removeFriendButton" onAction="#executeAddRemoveFriend"/>
+                            </HBox>
+                        </GridPane>
+                        <VBox fx:id="commonEventTableContainer"/>
+                    </SplitPane>
+                </SplitPane>
+            </Tab>
+            <Tab text="Add New" closable="false">
+                <SplitPane>
+                    <VBox>
+                        <Text text="All Users"/>
+                        <TableView fx:id="userTable">
+                            <columns>
+                                <TableColumn text="First Name" fx:id="firstNameUserColumn"/>
+                                <TableColumn text="Last Name" fx:id="lastNameUserColumn"/>
+                                <TableColumn text="Username" fx:id="usernameUserColumn"/>
+                                <TableColumn text="User Type" fx:id="userTypeUserColumn"/>
+                                <TableColumn text="Pending" fx:id="pendingUserColumn"/>
+                            </columns>
+                        </TableView>
+                    </VBox>
+                    <GridPane alignment="CENTER" hgap="10" vgap="10">
+                        <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                        <Text fx:id="usernameUser" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                        <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                        <Text fx:id="firstNameUser" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                        <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                        <Text fx:id="lastNameUser" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                        <Label text="User Type:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                        <Text fx:id="userTypeUser" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        <Text fx:id="resultText2" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+
+                        <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="6"
+                              GridPane.columnSpan="2">
+                            <Button text="Remove Request" fx:id="removeRequestButton" onAction="#executeAddRemoveRequest"/>
+                            <Button text="Add Friend" fx:id="addFriendButton" onAction="#executeAddAddFriend"/>
+                        </HBox>
+                    </GridPane>
+                </SplitPane>
+            </Tab>
+            <Tab text="Pending Requests" closable="false">
+                <SplitPane>
+                    <VBox>
+                        <Text text="Pending Friend Requests"/>
+                        <TableView fx:id="pendingTable">
+                            <columns>
+                                <TableColumn text="First Name" fx:id="firstNamePendingColumn"/>
+                                <TableColumn text="Last Name" fx:id="lastNamePendingColumn"/>
+                                <TableColumn text="Username" fx:id="usernamePendingColumn"/>
+                                <TableColumn text="User Type" fx:id="userTypePendingColumn"/>
+                            </columns>
+                        </TableView>
+                    </VBox>
+                    <SplitPane orientation="VERTICAL">
+                        <GridPane alignment="CENTER" hgap="10" vgap="10">
+                            <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                            <Text fx:id="usernamePending" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                            <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                            <Text fx:id="firstNamePending" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                            <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                            <Text fx:id="lastNamePending" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                            <Label text="User Type:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                            <Text fx:id="userTypePending" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                            <Text fx:id="resultText3" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+
+                            <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="6"
+                                  GridPane.columnSpan="2">
+                                <Button text="Decline" fx:id="declineButton" onAction="#executeAddDecline"/>
+                                <Button text="Accept" fx:id="acceptButton" onAction="#executeAddAccept"/>
+                            </HBox>
+                        </GridPane>
+                    </SplitPane>
+                </SplitPane>
+            </Tab>
+        </TabPane>
+    </center>
+
+    <stylesheets>
+        <URL value="@../css/project.css"/>
+        <URL value="@../css/friends.css"/>
+    </stylesheets>
+</BorderPane>

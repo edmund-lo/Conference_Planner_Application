@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import java.net.URL?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="login.impl.LoginView" alignment="CENTER" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <Text text="Login" fx:id="title" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Text fx:id="resultText" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2"/>
+
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2">
+        <Button text="Register" fx:id="registerButton" onAction="#executeAddRegister"/>
+        <Button text="Log In" fx:id="loginButton" onAction="#executeAddLogin"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="2">
+        <Button text="Forgot your password?" fx:id="forgotButton" onAction="#executeAddForgotPassword"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@../css/project.css"/>
+        <URL value="@../css/login.css"/>
+    </stylesheets>
+</GridPane>

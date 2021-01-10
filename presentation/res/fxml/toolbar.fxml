@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toolbar.impl.ToolbarView"
+      alignment="CENTER_LEFT">
+    <ToolBar fx:id="toolbar">
+        <Button text="Home" onAction="#executeAddHome"/>
+        <MenuButton text="Scheduling">
+            <items>
+                <MenuItem text="View Own Schedule" onAction="#executeAddViewSchedule"/>
+                <MenuItem text="View All Events" onAction="#executeAddViewEvents"/>
+            </items>
+        </MenuButton>
+        <MenuButton text="Socials">
+            <items>
+                <MenuItem text="Messaging" onAction="#executeAddMessaging"/>
+                <MenuItem text="Friends" onAction="#executeAddFriends"/>
+            </items>
+        </MenuButton>
+        <HBox fx:id="organizerGroup">
+            <MenuButton text="Create">
+                <items>
+                    <MenuItem text="New Room" onAction="#executeAddCreateRoom"/>
+                    <MenuItem text="New Event" onAction="#executeAddCreateEvent"/>
+                </items>
+            </MenuButton>
+            <MenuButton text="Edit Events">
+                <items>
+                    <MenuItem text="Schedule Speaker" onAction="#executeAddScheduleSpeaker"/>
+                    <MenuItem text="Reschedule/Cancel Event" onAction="#executeAddCancelEvent"/>
+                </items>
+            </MenuButton>
+            <MenuButton text="Organizer Messaging">
+                <items>
+                    <MenuItem text="Message Speakers" onAction="#executeAddMessageSpeakers"/>
+                    <MenuItem text="Message Attendees" onAction="#executeAddMessageAttendees"/>
+                </items>
+            </MenuButton>
+        </HBox>
+        <HBox fx:id="speakerGroup">
+            <Button text="Speaker Events" onAction="#executeAddSpeakerEvents"/>
+        </HBox>
+        <HBox fx:id="adminGroup">
+            <MenuButton text="Admin Tools">
+                <items>
+                    <MenuItem text="Delete Messages" onAction="#executeAddDeleteMessages"/>
+                    <MenuItem text="Remove Events" onAction="#executeAddRemoveEvents"/>
+                </items>
+            </MenuButton>
+            <MenuButton text="User Accounts">
+                <items>
+                    <MenuItem text="Create New" onAction="#executeAddCreateAccount"/>
+                    <MenuItem text="Unlock" onAction="#executeAddUnlockAccounts"/>
+                    <MenuItem text="Set VIP" onAction="#executeAddSetVip"/>
+                </items>
+            </MenuButton>
+        </HBox>
+        <Button text="Log Out" onAction="#executeAddLogout"/>
+    </ToolBar>
+
+    <stylesheets>
+        <URL value="@../css/toolbar.css"/>
+    </stylesheets>
+</VBox>

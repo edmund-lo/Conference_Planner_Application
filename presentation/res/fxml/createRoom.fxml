@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<?import util.NumberTextField?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="organizer.impl.CreateRoomView" alignment="CENTER" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+
+    <Text text="Create New Room" fx:id="title" GridPane.columnIndex="0" GridPane.rowIndex="0"
+          GridPane.columnSpan="2"/>
+    <Label text="Room Name:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="roomName" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label text="Capacity:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <NumberTextField fx:id="capacity" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Label text="Amenities:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <CheckBox fx:id="amenity1" text="Chairs" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <CheckBox fx:id="amenity2" text="Tables" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <CheckBox fx:id="amenity3" text="Projector" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <CheckBox fx:id="amenity4" text="Sound System" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    <Text fx:id="resultText" GridPane.columnIndex="0" GridPane.rowIndex="8" GridPane.columnSpan="2"/>
+
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="10" GridPane.columnSpan="2">
+        <Button text="Create Room" fx:id="createButton" onAction="#executeAddCreateRoom"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@../css/project.css"/>
+        <URL value="@../css/createNew.css"/>
+    </stylesheets>
+</GridPane>

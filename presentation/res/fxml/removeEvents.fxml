@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0" minWidth="0" prefHeight="900" prefWidth="1600"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="admin.impl.RemoveEventsView">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+    <top>
+        <Text text="Remove Events" fx:id="title" />
+    </top>
+    <center>
+        <SplitPane>
+            <VBox>
+                <Text text="All Events"/>
+                <TableView fx:id="eventTable">
+                    <columns>
+                        <TableColumn fx:id="eventNameColumn" text="Event Name"/>
+                        <TableColumn fx:id="roomNameColumn" text="Room Name"/>
+                        <TableColumn fx:id="eventStartColumn" text="Start"/>
+                        <TableColumn fx:id="eventEndColumn" text="End"/>
+                    </columns>
+                </TableView>
+            </VBox>
+            <GridPane alignment="CENTER" hgap="10" vgap="10">
+                <Text text="Event Information" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+                <Label text="Event Name:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                <Text fx:id="summaryEventName" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label text="Capacity:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                <Text fx:id="summaryCapacity" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Label text="Remaining Spots:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                <Text fx:id="summaryRemainingSpots" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                <Label text="Room Name:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+                <Text fx:id="summaryRoomName" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+                <Label text="Start:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+                <Text fx:id="summaryStart" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+                <Label text="End:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+                <Text fx:id="summaryEnd" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+                <Label text="Duration:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+                <Text fx:id="summaryDuration" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+                <Label text="Required Amenities:" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+                <Text fx:id="summaryAmenities" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+                <Label text="Attendees:" GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+                <Text fx:id="summaryAttendees" GridPane.columnIndex="1" GridPane.rowIndex="10"/>
+                <Label text="Other Speakers:" GridPane.columnIndex="0" GridPane.rowIndex="11"/>
+                <Text fx:id="summarySpeakers" GridPane.columnIndex="1" GridPane.rowIndex="11"/>
+                <Text fx:id="resultText" GridPane.columnIndex="0" GridPane.rowIndex="12" GridPane.columnSpan="2"/>
+
+                <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="14"
+                      GridPane.columnSpan="2">
+                    <Button text="Remove Event" fx:id="signUpButton" onAction="#executeAddRemove"/>
+                </HBox>
+            </GridPane>
+        </SplitPane>
+    </center>
+
+    <stylesheets>
+        <URL value="@../css/project.css"/>
+        <URL value="@../css/cancel.css"/>
+    </stylesheets>
+</BorderPane>

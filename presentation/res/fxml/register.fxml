@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<?import java.lang.String?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="login.impl.RegisterView" alignment="CENTER" hgap="10" vgap="10">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <Text text="Register New User Account" fx:id="title" GridPane.columnIndex="0" GridPane.rowIndex="0"
+          GridPane.columnSpan="2"/>
+    <ChoiceBox fx:id="userType" value="Attendee" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <String fx:value="Administrator"/>
+        <String fx:value="Attendee"/>
+        <String fx:value="Organizer"/>
+        <String fx:value="Speaker"/>
+        <String fx:value="VIP"/>
+    </ChoiceBox>
+    <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Label text="First Name:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField fx:id="firstName" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Label text="Last Name:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <TextField fx:id="lastName" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+    <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <Label text="Confirm Password:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <PasswordField fx:id="confirmPassword" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    <Label text="Security Question 1:" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+    <TextField fx:id="securityQuestion1" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+    <Label text="Security Answer 1:" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+    <TextField fx:id="securityAnswer1" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+    <Label text="Security Question 2:" GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+    <TextField fx:id="securityQuestion2" GridPane.columnIndex="1" GridPane.rowIndex="10"/>
+    <Label text="Security Answer 2:" GridPane.columnIndex="0" GridPane.rowIndex="11"/>
+    <TextField fx:id="securityAnswer2" GridPane.columnIndex="1" GridPane.rowIndex="11"/>
+    <Text fx:id="resultText" GridPane.columnIndex="0" GridPane.rowIndex="12" GridPane.columnSpan="2"/>
+
+    <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="14" GridPane.columnSpan="2">
+        <Button text="Confirm Registration" fx:id="registerButton" onAction="#executeAddRegister"/>
+        <Button text="Go Back" fx:id="backButton" onAction="#executeAddGoBack"/>
+    </HBox>
+
+    <stylesheets>
+        <URL value="@../css/project.css"/>
+        <URL value="@../css/login.css"/>
+    </stylesheets>
+</GridPane>

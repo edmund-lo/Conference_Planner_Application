@@ -1,0 +1,26 @@
+#title {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.text-field:error, .password-field:error, .text:error {
+    -fx-text-box-border: red;
+    -fx-focus-color: red;
+}
+
+.text-field:warning, .password-field:warning {
+    -fx-text-box-border: orange;
+    -fx-focus-color: orange;
+}
+
+.text:success {
+    -fx-fill: green;
+}
+
+.text:warning {
+    -fx-fill: orange;
+}
+
+.text:error {
+    -fx-fill: red;
+}

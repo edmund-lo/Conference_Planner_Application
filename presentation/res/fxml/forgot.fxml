@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="login.impl.ForgotView">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
+
+    <top>
+        <Text text="Forgot Password?" fx:id="title"/>
+    </top>
+    <center>
+        <Accordion>
+            <panes>
+                <TitledPane text="Step 1" fx:id="step1">
+                    <GridPane alignment="CENTER" hgap="10" vgap="10">
+                        <Text text="Enter your username." GridPane.columnIndex="0" GridPane.rowIndex="0"
+                              GridPane.columnSpan="2"/>
+                        <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                        <TextField fx:id="username" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                        <Text fx:id="resultText1" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2"/>
+                        <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="5"
+                              GridPane.columnSpan="2">
+                            <Button text="Go Back To Log In" fx:id="backButton1" onAction="#executeAddFirstGoBack"/>
+                            <Button text="Next Step" fx:id="securityButton" onAction="#executeAddDisplaySecurity"/>
+                        </HBox>
+                    </GridPane>
+                </TitledPane>
+                <TitledPane text="Step 2" fx:id="step2" disable="true">
+                    <GridPane alignment="CENTER" hgap="10" vgap="10">
+                        <Text text="Answer your security question." GridPane.columnIndex="0" GridPane.rowIndex="0"
+                              GridPane.columnSpan="2"/>
+                        <Label text="Security Question:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                        <TextField fx:id="securityQuestion1" GridPane.columnIndex="1" GridPane.rowIndex="2" editable="false"/>
+                        <Label text="Security Answer:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                        <PasswordField fx:id="securityAnswer1" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        <Label text="Security Question:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                        <TextField fx:id="securityQuestion2" GridPane.columnIndex="1" GridPane.rowIndex="4" editable="false"/>
+                        <Label text="Security Answer:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+                        <PasswordField fx:id="securityAnswer2" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+                        <Text fx:id="resultText2" GridPane.columnIndex="0" GridPane.rowIndex="6" GridPane.columnSpan="2"/>
+                        <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="8"
+                              GridPane.columnSpan="2">
+                            <Button text="Previous Step" fx:id="previousButton" onAction="#executeAddPrevious"/>
+                            <Button text="Next Step" fx:id="confirmButton" onAction="#executeAddConfirm"/>
+                        </HBox>
+                    </GridPane>
+                </TitledPane>
+                <TitledPane text="Step 3" fx:id="step3" disable="true">
+                    <GridPane alignment="CENTER" hgap="10" vgap="10">
+                        <Text text="Enter your new password." GridPane.columnIndex="0" GridPane.rowIndex="0"
+                              GridPane.columnSpan="2"/>
+                        <Label text="New Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                        <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Confirm New Password:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                        <PasswordField fx:id="confirmPassword" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        <Text fx:id="resultText3" GridPane.columnIndex="0" GridPane.rowIndex="7" GridPane.columnSpan="2"/>
+                        <HBox spacing="10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="9"
+                              GridPane.columnSpan="2">
+                            <Button text="Reset Password" fx:id="resetButton" onAction="#executeAddReset"/>
+                            <Button text="Go Back To Log In" fx:id="backButton2" onAction="#executeAddSecondGoBack"/>
+                        </HBox>
+                    </GridPane>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </center>
+
+    <stylesheets>
+        <URL value="@../css/project.css"/>
+        <URL value="@../css/login.css"/>
+    </stylesheets>
+</BorderPane>

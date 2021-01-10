@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"  minHeight="0" minWidth="0"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="attendee.impl.MessagingView">
+    <padding>
+        <Insets bottom="25" left="25" right="25" top="25" />
+    </padding>
+    <top>
+        <BorderPane>
+            <center>
+                <Text fx:id="title" text="Messaging" />
+            </center>
+            <right>
+                <Button fx:id="newMessageButton" onAction="#executeAddNewMessage" text="New Message" />
+            </right>
+        </BorderPane>
+    </top>
+    <center>
+        <TabPane fx:id="tabPane">
+            <Tab closable="false" text="Primary">
+                <SplitPane dividerPositions="0.5">
+                    <TableView fx:id="primaryInbox">
+                        <columns>
+                            <TableColumn text="Members" fx:id="primaryMembersColumn"/>
+                            <TableColumn text="Subject" fx:id="primarySubjectColumn"/>
+                            <TableColumn text="Unread" fx:id="primaryUnreadColumn"/>
+                        </columns>
+                    </TableView>
+                    <BorderPane prefWidth="1600" prefHeight="900">
+                        <top>
+                            <GridPane alignment="CENTER" hgap="10" vgap="10">
+                                <Label text="From:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <Text fx:id="primarySender" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                <Label text="To:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                <Text fx:id="primaryRecipients" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="Subject:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <Text fx:id="primarySubject" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </GridPane>
+                        </top>
+                        <center>
+                            <VBox>
+                                <BorderPane>
+                                    <left>
+                                        <Text text="Message Thread"/>
+                                    </left>
+                                    <right>
+                                        <HBox>
+                                            <Button fx:id="unreadPrimaryButton" onAction="#executeAddUnreadPrimary"
+                                                    text="Mark As Unread" />
+                                            <Button fx:id="archiveButton" onAction="#executeAddArchive" text="Archive" />
+                                            <Button fx:id="deleteButton" onAction="#executeAddDelete" text="Delete" />
+                                        </HBox>
+                                    </right>
+                                </BorderPane>
+                                <ScrollPane fx:id="primaryThreadContainer" />
+                            </VBox>
+                        </center>
+                        <bottom>
+                            <GridPane alignment="CENTER" hgap="10" vgap="10">
+                                <Label text="Message:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <TextArea fx:id="content" GridPane.columnIndex="1" GridPane.rowIndex="0"
+                                          prefRowCount="1" />
+                                <Button fx:id="replyButton" onAction="#executeAddReply" text="Reply"
+                                        GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                                <Text fx:id="resultText" GridPane.columnIndex="0" GridPane.rowIndex="1"
+                                      GridPane.columnSpan="3"/>
+                            </GridPane>
+                        </bottom>
+                    </BorderPane>
+                </SplitPane>
+            </Tab>
+            <Tab closable="false" text="Archived">
+                <SplitPane dividerPositions="0.5">
+                    <TableView fx:id="archivedInbox">
+                        <columns>
+                            <TableColumn text="Members" fx:id="archivedMembersColumn"/>
+                            <TableColumn text="Subject" fx:id="archivedSubjectColumn"/>
+                            <TableColumn text="Unread" fx:id="archivedUnreadColumn"/>
+                        </columns>
+                    </TableView>
+                    <BorderPane prefWidth="1600" prefHeight="900">
+                        <top>
+                            <GridPane alignment="CENTER" hgap="10" vgap="10">
+                                <Label text="From:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <Text fx:id="archivedSender" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                <Label text="To:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                <Text fx:id="archivedRecipients" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="Subject:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <Text fx:id="archivedSubject" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </GridPane>
+                        </top>
+                        <center>
+                            <VBox>
+                                <BorderPane>
+                                    <left>
+                                        <Text text="Message Thread"/>
+                                    </left>
+                                    <right>
+                                        <HBox>
+                                            <Button fx:id="unreadArchivedButton" onAction="#executeAddUnreadArchived"
+                                                    text="Mark As Unread" />
+                                            <Button fx:id="primaryButton1" onAction="#executeAddPrimaryFirst"
+                                                    text="Move Back"/>
+                                        </HBox>
+                                    </right>
+                                </BorderPane>
+                                <ScrollPane fx:id="archivedThreadContainer" />
+                            </VBox>
+                        </center>
+                    </BorderPane>
+                </SplitPane>
+            </Tab>
+            <Tab closable="false" text="Trash">
+                <SplitPane dividerPositions="0.5">
+                    <TableView fx:id="trashInbox">
+                        <columns>
+                            <TableColumn text="Members" fx:id="trashMembersColumn"/>
+                            <TableColumn text="Subject" fx:id="trashSubjectColumn"/>
+                            <TableColumn text="Unread" fx:id="trashUnreadColumn"/>
+                        </columns>
+                    </TableView>
+                    <BorderPane prefWidth="1600" prefHeight="900">
+                        <top>
+                            <GridPane alignment="CENTER" hgap="10" vgap="10">
+                                <Label text="From:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <Text fx:id="trashSender" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                <Label text="To:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                <Text fx:id="trashRecipients" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                <Label text="Subject:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <Text fx:id="trashSubject" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                            </GridPane>
+                        </top>
+                        <center>
+                            <VBox>
+                                <BorderPane>
+                                    <left>
+                                        <Text text="Message Thread"/>
+                                    </left>
+                                    <right>
+                                        <HBox>
+                                            <Button fx:id="unreadTrashButton" onAction="#executeAddUnreadTrash"
+                                                    text="Mark As Unread" />
+                                            <Button fx:id="primaryButton2" onAction="#executeAddPrimarySecond"
+                                                    text="Move Back"/>
+                                        </HBox>
+                                    </right>
+                                </BorderPane>
+                                <ScrollPane fx:id="trashThreadContainer" />
+                            </VBox>
+                        </center>
+                    </BorderPane>
+                </SplitPane>
+            </Tab>
+        </TabPane>
+    </center>
+
+    <stylesheets>
+        <URL value="@../css/project.css" />
+        <URL value="@../css/messaging.css" />
+    </stylesheets>
+</BorderPane>
