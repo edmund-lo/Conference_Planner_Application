@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="8760.0" y="340.0">toolbar.impl.ToolbarPresenter</node>
+    <node x="5008.0" y="340.0">login.impl.LoginPresenter</node>
+    <node x="4623.493975903613" y="260.0">organizer.IMessageUsersPresenter</node>
+    <node x="2745.0" y="415.0">adapter.UserAdapter</node>
+    <node x="3756.0000000000005" y="260.0">attendee.IMessagingView</node>
+    <node x="8756.0" y="260.0">toolbar.IToolbarPresenter</node>
+    <node x="3168.0000000000005" y="260.0">attendee.IFriendsPresenter</node>
+    <node x="9100.0" y="260.0">home.IHomePresenter</node>
+    <node x="4.0" y="340.0">speaker.impl.SpeakerEventsPresenter</node>
+    <node x="464.0" y="260.0">admin.IRemoveEventsView</node>
+    <node x="1113.0" y="415.0">adapter.ScheduleAdapter</node>
+    <node x="1176.0000000000005" y="340.0">admin.impl.UnlockAccountsView</node>
+    <node x="5492.0" y="340.0">login.impl.ForgotView</node>
+    <node x="3760.0000000000005" y="340.0">attendee.impl.MessagingView</node>
+    <node x="8376.0" y="340.0">organizer.impl.MessageSpeakersView</node>
+    <node x="253.0" y="495.0">model.User</node>
+    <node x="6024.0" y="340.0">login.impl.ForgotPresenter</node>
+    <node x="6216.0" y="260.0">organizer.ICreateEventPresenter</node>
+    <node x="7332.0" y="260.0">organizer.IRescheduleCancelEventView</node>
+    <node x="6640.0" y="260.0">organizer.IScheduleSpeakerPresenter</node>
+    <node x="2556.0" y="415.0">util.DateTimeUtil</node>
+    <node x="2162.0" y="415.0">model.MessageThread</node>
+    <node x="2436.0000000000005" y="260.0">admin.ICreateAccountPresenter</node>
+    <node x="2244.0000000000005" y="340.0">admin.impl.SetVipPresenter</node>
+    <node x="8596.0" y="340.0">toolbar.impl.ToolbarView</node>
+    <node x="1764.0000000000005" y="340.0">admin.impl.DeleteMessagesPresenter</node>
+    <node x="2926.0" y="415.0">model.UserAccount</node>
+    <node x="6456.0" y="340.0">organizer.impl.CreateRoomView</node>
+    <node x="468.0" y="340.0">admin.impl.RemoveEventsView</node>
+    <node x="6020.0" y="260.0">login.IForgotPresenter</node>
+    <node x="6452.0" y="260.0">organizer.ICreateRoomView</node>
+    <node x="9104.0" y="340.0">home.impl.HomePresenter</node>
+    <node x="8960.0" y="260.0">home.IHomeView</node>
+    <node x="5352.0" y="340.0">login.impl.SetupView</node>
+    <node x="7924.0" y="260.0">organizer.ICreateRoomPresenter</node>
+    <node x="1548.0000000000005" y="260.0">admin.ICreateAccountView</node>
+    <node x="3540.0000000000005" y="340.0">attendee.impl.MessagingPresenter</node>
+    <node x="7928.0" y="340.0">organizer.impl.CreateRoomPresenter</node>
+    <node x="4480.0" y="340.0">organizer.impl.MessageAttendeesPresenter</node>
+    <node x="1392.0000000000005" y="260.0">admin.ISetVipView</node>
+    <node x="912.0000000000005" y="260.0">admin.IUnlockAccountsPresenter</node>
+    <node x="1752.0" y="415.0">adapter.MessageAdapter</node>
+    <node x="5844.0" y="340.0">login.impl.SetupPresenter</node>
+    <node x="1539.0" y="415.0">util.NumberTextField</node>
+    <node x="6912.0" y="340.0">organizer.impl.ScheduleSpeakerView</node>
+    <node x="8964.0" y="340.0">home.impl.HomeView</node>
+    <node x="3376.0000000000005" y="340.0">attendee.impl.FriendsView</node>
+    <node x="402.0" y="415.0">adapter.MessageThreadAdapter</node>
+    <node x="4136.0" y="340.0">attendee.impl.ViewOwnEventsView</node>
+    <node x="1396.0000000000005" y="340.0">admin.impl.SetVipView</node>
+    <node x="3932.0000000000005" y="340.0">attendee.impl.ViewAllEventsView</node>
+    <node x="6220.0" y="340.0">organizer.impl.CreateEventPresenter</node>
+    <node x="2440.0000000000005" y="340.0">admin.impl.CreateAccountPresenter</node>
+    <node x="2024.0000000000005" y="340.0">admin.impl.DeleteMessagesView</node>
+    <node x="229.0" y="415.0">model.Selectable</node>
+    <node x="8148.0" y="340.0">organizer.impl.MessageAttendeesView</node>
+    <node x="1760.0000000000005" y="260.0">admin.IDeleteMessagesPresenter</node>
+    <node x="8271.493975903613" y="260.0">organizer.IMessageUsersView</node>
+    <node x="252.0" y="260.0">speaker.ISpeakerEventsView</node>
+    <node x="12.0" y="415.0">util.DateTimePicker</node>
+    <node x="7612.0" y="340.0">organizer.impl.RescheduleCancelEventPresenter</node>
+    <node x="1326.0" y="415.0">adapter.LoginLogAdapter</node>
+    <node x="655.0" y="415.0">adapter.UserAccountAdapter</node>
+    <node x="6908.0" y="260.0">organizer.IScheduleSpeakerView</node>
+    <node x="5004.0" y="260.0">login.ILoginPresenter</node>
+    <node x="2359.0" y="415.0">model.ScheduleEntry</node>
+    <node x="5488.0" y="260.0">login.IForgotView</node>
+    <node x="3264.0" y="415.0">model.Message</node>
+    <node x="7608.0" y="260.0">organizer.IRescheduleCancelEventPresenter</node>
+    <node x="7140.0" y="340.0">organizer.impl.CreateEventView</node>
+    <node x="2928.0000000000005" y="340.0">attendee.impl.ViewOwnEventsPresenter</node>
+    <node x="892.0" y="415.0">util.ComponentFactory</node>
+    <node x="5259.493975903613" y="260.0">login.IRegisterView</node>
+    <node x="0.0" y="260.0">speaker.ISpeakerEventsPresenter</node>
+    <node x="672.0000000000005" y="340.0">admin.impl.RemoveEventsPresenter</node>
+    <node x="1552.0000000000005" y="340.0">admin.impl.CreateAccountView</node>
+    <node x="3536.0000000000005" y="260.0">attendee.IMessagingPresenter</node>
+    <node x="668.0000000000005" y="260.0">admin.IRemoveEventsPresenter</node>
+    <node x="2684.0000000000005" y="340.0">attendee.impl.ViewAllEventsPresenter</node>
+    <node x="5731.493975903613" y="260.0">login.IRegisterPresenter</node>
+    <node x="256.0" y="340.0">speaker.impl.SpeakerEventsView</node>
+    <node x="0.0" y="495.0">util.DateTimePicker.InternalConverter</node>
+    <node x="4534.0" y="0.0">common</node>
+    <node x="6644.0" y="340.0">organizer.impl.ScheduleSpeakerPresenter</node>
+    <node x="1172.0000000000005" y="260.0">admin.IUnlockAccountsView</node>
+    <node x="4340.0" y="340.0">login.impl.LoginView</node>
+    <node x="2020.0000000000005" y="260.0">admin.IDeleteMessagesView</node>
+    <node x="2240.0000000000005" y="260.0">admin.ISetVipPresenter</node>
+    <node x="2813.493975903613" y="260.0">attendee.IViewEventsPresenter</node>
+    <node x="7336.0" y="340.0">organizer.impl.RescheduleCancelEventView</node>
+    <node x="1957.0" y="415.0">util.TextResultUtil</node>
+    <node x="916.0000000000005" y="340.0">admin.impl.UnlockAccountsPresenter</node>
+    <node x="3107.0" y="415.0">model.LoginLog</node>
+    <node x="7136.0" y="260.0">organizer.ICreateEventView</node>
+    <node x="5188.0" y="340.0">login.impl.RegisterView</node>
+    <node x="4336.0" y="260.0">login.ILoginView</node>
+    <node x="4748.0" y="340.0">organizer.impl.MessageSpeakersPresenter</node>
+    <node x="5640.0" y="340.0">login.impl.RegisterPresenter</node>
+    <node x="3372.0000000000005" y="260.0">attendee.IFriendsView</node>
+    <node x="4041.493975903613" y="260.0">attendee.IViewEventsView</node>
+    <node x="8592.0" y="260.0">toolbar.IToolbarView</node>
+    <node x="3413.0" y="415.0">Main</node>
+    <node x="3172.0000000000005" y="340.0">attendee.impl.FriendsPresenter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="login.IRegisterView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="5335.493975903613" y="210.0" />
+      <point x="4615.473684210527" y="210.0" />
+      <point x="9.473684210526699" y="15.0" />
+    </edge>
+    <edge source="attendee.IViewEventsPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="2917.493975903613" y="180.0" />
+      <point x="4581.368421052632" y="180.0" />
+      <point x="-24.631578947368325" y="15.0" />
+    </edge>
+    <edge source="home.impl.HomePresenter" target="home.IHomePresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="admin.impl.SetVipPresenter" target="admin.ISetVipPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="admin.IDeleteMessagesView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="2120.0000000000005" y="150.0" />
+      <point x="4570.0" y="150.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="organizer.IScheduleSpeakerPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="6764.0" y="150.0" />
+      <point x="4638.21052631579" y="150.0" />
+      <point x="32.21052631578914" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.MessageSpeakersView" target="organizer.IMessageUsersView">
+      <point x="0.0" y="-15.0" />
+      <point x="8476.0" y="315.0" />
+      <point x="8409.493975903613" y="315.0" />
+      <point x="46.0" y="15.0" />
+    </edge>
+    <edge source="admin.impl.DeleteMessagesPresenter" target="admin.IDeleteMessagesPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="login.impl.RegisterView" target="login.IRegisterView">
+      <point x="0.0" y="-15.0" />
+      <point x="5260.0" y="315.0" />
+      <point x="5297.493975903613" y="315.0" />
+      <point x="-38.0" y="15.0" />
+    </edge>
+    <edge source="organizer.IMessageUsersView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="8363.493975903613" y="90.0" />
+      <point x="4660.947368421053" y="90.0" />
+      <point x="54.94736842105249" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.ScheduleSpeakerView" target="organizer.IScheduleSpeakerView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="attendee.IFriendsView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="3444.0000000000005" y="200.0" />
+      <point x="4588.947368421053" y="200.0" />
+      <point x="-17.052631578947512" y="15.0" />
+    </edge>
+    <edge source="login.IForgotPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="6108.0" y="180.0" />
+      <point x="4626.842105263158" y="180.0" />
+      <point x="20.842105263157464" y="15.0" />
+    </edge>
+    <edge source="login.impl.LoginPresenter" target="login.ILoginPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="toolbar.IToolbarView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="8664.0" y="80.0" />
+      <point x="4664.736842105263" y="80.0" />
+      <point x="58.73684210526335" y="15.0" />
+    </edge>
+    <edge source="attendee.IViewEventsView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="4125.493975903613" y="230.0" />
+      <point x="4600.315789473685" y="230.0" />
+      <point x="-5.684210526315837" y="15.0" />
+    </edge>
+    <edge source="admin.IUnlockAccountsPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="1032.0000000000005" y="100.0" />
+      <point x="4551.052631578948" y="100.0" />
+      <point x="-54.94736842105249" y="15.0" />
+    </edge>
+    <edge source="toolbar.impl.ToolbarPresenter" target="toolbar.IToolbarPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="attendee.impl.ViewAllEventsView" target="attendee.IViewEventsView">
+      <point x="0.0" y="-15.0" />
+      <point x="4024.0000000000005" y="315.0" />
+      <point x="4083.493975903613" y="315.0" />
+      <point x="-42.0" y="15.0" />
+    </edge>
+    <edge source="login.IForgotView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="5556.0" y="200.0" />
+      <point x="4619.263157894737" y="200.0" />
+      <point x="13.26315789473665" y="15.0" />
+    </edge>
+    <edge source="admin.impl.CreateAccountPresenter" target="admin.ICreateAccountPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="organizer.ICreateRoomPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="8028.0" y="100.0" />
+      <point x="4657.157894736842" y="100.0" />
+      <point x="51.15789473684163" y="15.0" />
+    </edge>
+    <edge source="attendee.impl.FriendsPresenter" target="attendee.IFriendsPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="toolbar.impl.ToolbarView" target="toolbar.IToolbarView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="attendee.impl.FriendsView" target="attendee.IFriendsView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="organizer.ICreateRoomView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="6536.0" y="160.0" />
+      <point x="4634.42105263158" y="160.0" />
+      <point x="28.421052631579187" y="15.0" />
+    </edge>
+    <edge source="admin.impl.CreateAccountView" target="admin.ICreateAccountView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="admin.impl.UnlockAccountsView" target="admin.IUnlockAccountsView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="admin.ICreateAccountPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="2552.0000000000005" y="170.0" />
+      <point x="4577.578947368422" y="170.0" />
+      <point x="-28.421052631579187" y="15.0" />
+    </edge>
+    <edge source="attendee.impl.ViewOwnEventsView" target="attendee.IViewEventsView">
+      <point x="0.0" y="-15.0" />
+      <point x="4228.0" y="315.0" />
+      <point x="4167.493975903613" y="315.0" />
+      <point x="42.0" y="15.0" />
+    </edge>
+    <edge source="attendee.impl.ViewAllEventsPresenter" target="attendee.IViewEventsPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="2796.0000000000005" y="315.0" />
+      <point x="2865.493975903613" y="315.0" />
+      <point x="-52.0" y="15.0" />
+    </edge>
+    <edge source="toolbar.IToolbarPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="8848.0" y="70.0" />
+      <point x="4668.526315789473" y="70.0" />
+      <point x="62.5263157894733" y="15.0" />
+    </edge>
+    <edge source="speaker.impl.SpeakerEventsView" target="speaker.ISpeakerEventsView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="organizer.IScheduleSpeakerView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="7012.0" y="140.0" />
+      <point x="4642.0" y="140.0" />
+      <point x="36.0" y="15.0" />
+    </edge>
+    <edge source="attendee.impl.MessagingPresenter" target="attendee.IMessagingPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="attendee.IFriendsPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="3260.0000000000005" y="190.0" />
+      <point x="4585.157894736843" y="190.0" />
+      <point x="-20.842105263157464" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.CreateEventView" target="organizer.ICreateEventView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="organizer.ICreateEventView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="7224.0" y="130.0" />
+      <point x="4645.789473684212" y="130.0" />
+      <point x="39.78947368421086" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.RescheduleCancelEventView" target="organizer.IRescheduleCancelEventView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="organizer.IRescheduleCancelEventView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="7460.0" y="120.0" />
+      <point x="4649.578947368422" y="120.0" />
+      <point x="43.57894736842081" y="15.0" />
+    </edge>
+    <edge source="login.impl.SetupView" target="login.IRegisterView">
+      <point x="0.0" y="-15.0" />
+      <point x="5412.0" y="315.0" />
+      <point x="5373.493975903613" y="315.0" />
+      <point x="38.0" y="15.0" />
+    </edge>
+    <edge source="admin.ISetVipPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="2328.0000000000005" y="160.0" />
+      <point x="4573.789473684212" y="160.0" />
+      <point x="-32.21052631578914" y="15.0" />
+    </edge>
+    <edge source="admin.IRemoveEventsView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="556.0" y="80.0" />
+      <point x="4543.473684210527" y="80.0" />
+      <point x="-62.5263157894733" y="15.0" />
+    </edge>
+    <edge source="admin.impl.UnlockAccountsPresenter" target="admin.IUnlockAccountsPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="util.DateTimePicker.InternalConverter" target="util.DateTimePicker">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="home.IHomePresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="9180.0" y="50.0" />
+      <point x="4676.105263157895" y="50.0" />
+      <point x="70.10526315789502" y="15.0" />
+    </edge>
+    <edge source="admin.ISetVipView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="1460.0000000000005" y="120.0" />
+      <point x="4558.631578947368" y="120.0" />
+      <point x="-47.368421052631675" y="15.0" />
+    </edge>
+    <edge source="speaker.ISpeakerEventsView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="348.0" y="70.0" />
+      <point x="4539.684210526317" y="70.0" />
+      <point x="-66.31578947368416" y="15.0" />
+    </edge>
+    <edge source="admin.IDeleteMessagesPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="1880.0000000000005" y="140.0" />
+      <point x="4566.21052631579" y="140.0" />
+      <point x="-39.78947368421086" y="15.0" />
+    </edge>
+    <edge source="speaker.ISpeakerEventsPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="116.0" y="60.0" />
+      <point x="4535.894736842105" y="60.0" />
+      <point x="-70.10526315789502" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.MessageAttendeesPresenter" target="organizer.IMessageUsersPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="4604.0" y="315.0" />
+      <point x="4679.493975903613" y="315.0" />
+      <point x="-56.0" y="15.0" />
+    </edge>
+    <edge source="login.IRegisterPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="5827.493975903613" y="190.0" />
+      <point x="4623.052631578948" y="190.0" />
+      <point x="17.052631578947512" y="15.0" />
+    </edge>
+    <edge source="organizer.ICreateEventPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="6324.0" y="170.0" />
+      <point x="4630.631578947368" y="170.0" />
+      <point x="24.631578947368325" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.ScheduleSpeakerPresenter" target="organizer.IScheduleSpeakerPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="model.User" target="model.Selectable">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="organizer.IMessageUsersPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="4735.493975903613" y="230.0" />
+      <point x="4607.894736842105" y="230.0" />
+      <point x="1.894736842104976" y="15.0" />
+    </edge>
+    <edge source="home.IHomeView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="9020.0" y="60.0" />
+      <point x="4672.315789473685" y="60.0" />
+      <point x="66.31578947368416" y="15.0" />
+    </edge>
+    <edge source="attendee.IMessagingView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="3836.0000000000005" y="220.0" />
+      <point x="4596.526315789473" y="220.0" />
+      <point x="-9.473684210526699" y="15.0" />
+    </edge>
+    <edge source="admin.impl.DeleteMessagesView" target="admin.IDeleteMessagesView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="login.impl.ForgotView" target="login.IForgotView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="admin.ICreateAccountView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="1644.0000000000005" y="130.0" />
+      <point x="4562.42105263158" y="130.0" />
+      <point x="-43.57894736842081" y="15.0" />
+    </edge>
+    <edge source="login.ILoginPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="5088.0" y="220.0" />
+      <point x="4611.684210526317" y="220.0" />
+      <point x="5.684210526315837" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.CreateRoomView" target="organizer.ICreateRoomView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.RescheduleCancelEventPresenter" target="organizer.IRescheduleCancelEventPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="admin.impl.SetVipView" target="admin.ISetVipView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="login.ILoginView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="4400.0" y="240.0" />
+      <point x="4604.105263157895" y="240.0" />
+      <point x="-1.894736842104976" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.CreateEventPresenter" target="organizer.ICreateEventPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="admin.impl.RemoveEventsView" target="admin.IRemoveEventsView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="home.impl.HomeView" target="home.IHomeView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="login.impl.ForgotPresenter" target="login.IForgotPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="login.impl.SetupPresenter" target="login.IRegisterPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="5924.0" y="315.0" />
+      <point x="5875.493975903613" y="315.0" />
+      <point x="48.0" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.MessageSpeakersPresenter" target="organizer.IMessageUsersPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="4868.0" y="315.0" />
+      <point x="4791.493975903613" y="315.0" />
+      <point x="56.0" y="15.0" />
+    </edge>
+    <edge source="attendee.impl.ViewOwnEventsPresenter" target="attendee.IViewEventsPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="3040.0000000000005" y="315.0" />
+      <point x="2969.493975903613" y="315.0" />
+      <point x="52.0" y="15.0" />
+    </edge>
+    <edge source="speaker.impl.SpeakerEventsPresenter" target="speaker.ISpeakerEventsPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.MessageAttendeesView" target="organizer.IMessageUsersView">
+      <point x="0.0" y="-15.0" />
+      <point x="8252.0" y="315.0" />
+      <point x="8317.493975903613" y="315.0" />
+      <point x="-46.0" y="15.0" />
+    </edge>
+    <edge source="admin.IRemoveEventsPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="780.0000000000005" y="90.0" />
+      <point x="4547.263157894737" y="90.0" />
+      <point x="-58.73684210526335" y="15.0" />
+    </edge>
+    <edge source="login.impl.LoginView" target="login.ILoginView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="organizer.impl.CreateRoomPresenter" target="organizer.ICreateRoomPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="login.impl.RegisterPresenter" target="login.IRegisterPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="5732.0" y="315.0" />
+      <point x="5779.493975903613" y="315.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="attendee.impl.MessagingView" target="attendee.IMessagingView">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="organizer.IRescheduleCancelEventPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="7756.0" y="110.0" />
+      <point x="4653.368421052632" y="110.0" />
+      <point x="47.368421052631675" y="15.0" />
+    </edge>
+    <edge source="admin.impl.RemoveEventsPresenter" target="admin.IRemoveEventsPresenter">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="attendee.IMessagingPresenter" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="3636.0000000000005" y="210.0" />
+      <point x="4592.736842105263" y="210.0" />
+      <point x="-13.26315789473665" y="15.0" />
+    </edge>
+    <edge source="admin.IUnlockAccountsView" target="common">
+      <point x="0.0" y="-15.0" />
+      <point x="1272.0000000000005" y="110.0" />
+      <point x="4554.842105263158" y="110.0" />
+      <point x="-51.157894736842536" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5443185078911483" x="910.5213632406724" y="148.81794459502635" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

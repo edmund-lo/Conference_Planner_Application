@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="217.44999999999982" y="670.0">gateways.LoginLogGateway</node>
+    <node x="38.5" y="220.0">entities.LoginLog</node>
+    <node x="2241.6769941520456" y="930.0">controllers.SpeakerController</node>
+    <node x="1904.1769941520456" y="670.0">presenters.AdminPresenter</node>
+    <node x="469.7857660818702" y="0.0">entities.User</node>
+    <node x="479.7857660818702" y="110.0">entities.Organizer</node>
+    <node x="1493.8816640085051" y="670.0">controllers.UserController</node>
+    <node x="1312.8816640085051" y="670.0">presenters.LoginPresenter</node>
+    <node x="1578.6166666666666" y="0.0">entities.Message</node>
+    <node x="798.6024327485368" y="390.0">gateways.UserAccountGateway</node>
+    <node x="1755.6666666666665" y="390.0">presenters.MessagePresenter</node>
+    <node x="1999.6666666666663" y="390.0">presenters.UserPresenter</node>
+    <node x="775.9357660818702" y="110.0">entities.UserAccount</node>
+    <node x="440.5357660818702" y="220.0">usecases.UserManager</node>
+    <node x="492.09833067517184" y="390.0">gateways.UserGateway</node>
+    <node x="747.9357660818702" y="220.0">usecases.UserAccountManager</node>
+    <node x="1240.1999999999998" y="220.0">usecases.RoomManager</node>
+    <node x="1133.1999999999998" y="930.0">controllers.AdminController</node>
+    <node x="2001.1769941520456" y="220.0">presenters.PresenterUtil</node>
+    <node x="1622.8666666666666" y="110.0">entities.MessageThread</node>
+    <node x="1522.9499999999998" y="390.0">gateways.MessageGateway</node>
+    <node x="1357.9499999999998" y="390.0">gateways.EventGateway</node>
+    <node x="620.7857660818702" y="110.0">entities.Attendee</node>
+    <node x="1268.1999999999998" y="110.0">entities.Room</node>
+    <node x="1399.1999999999998" y="220.0">usecases.EventManager</node>
+    <node x="10.5" y="390.0">usecases.LoginLogManager</node>
+    <node x="1858.6666666666665" y="930.0">controllers.AttendeeController</node>
+    <node x="2084.1769941520456" y="670.0">presenters.AttendeePresenter</node>
+    <node x="992.8816640085051" y="220.0">gateways.GatewayInterface</node>
+    <node x="1196.1999999999998" y="0.0">entities.SerializableComparator</node>
+    <node x="371.7857660818702" y="110.0">entities.Admin</node>
+    <node x="1427.1999999999998" y="110.0">entities.Event</node>
+    <node x="2291.6769941520456" y="670.0">presenters.SpeakerPresenter</node>
+    <node x="2445.6769941520456" y="930.0">controllers.OrganizerController</node>
+    <node x="247.78576608187018" y="110.0">entities.Speaker</node>
+    <node x="1568.1999999999998" y="220.0">usecases.MessageManager</node>
+    <node x="2499.6769941520456" y="670.0">presenters.OrganizerPresenter</node>
+    <node x="322.9499999999998" y="930.0">controllers.LoginController</node>
+    <node x="1200.9499999999998" y="390.0">gateways.RoomGateway</node>
+    <node x="0.0" y="1005.0">Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="gateways.EventGateway" target="gateways.GatewayInterface">
+      <point x="-48.0" y="-15.0" />
+      <point x="1381.9499999999998" y="280.0" />
+      <point x="1124.8816640085051" y="280.0" />
+      <point x="44.0" y="15.0" />
+    </edge>
+    <edge source="presenters.OrganizerPresenter" target="presenters.UserPresenter">
+      <point x="-64.0" y="-15.0" />
+      <point x="2531.6769941520456" y="620.0" />
+      <point x="2142.166666666666" y="620.0" />
+      <point x="66.5" y="15.0" />
+    </edge>
+    <edge source="controllers.LoginController" target="usecases.LoginLogManager">
+      <point x="-63.0" y="-15.0" />
+      <point x="343.9499999999998" y="900.0" />
+      <point x="31.5" y="900.0" />
+      <point x="-63.0" y="15.0" />
+    </edge>
+    <edge source="controllers.LoginController" target="entities.User">
+      <point x="-77.0" y="-15.0" />
+      <point x="329.9499999999998" y="910.0" />
+      <point x="0.0" y="910.0" />
+      <point x="0.0" y="50.0" />
+      <point x="473.4221297182338" y="50.0" />
+      <point x="-36.363636363636374" y="15.0" />
+    </edge>
+    <edge source="usecases.UserManager" target="entities.Speaker">
+      <point x="-61.19999999999993" y="-15.0" />
+      <point x="447.33576608187025" y="200.0" />
+      <point x="273.7857660818702" y="200.0" />
+      <point x="-26.0" y="15.0" />
+    </edge>
+    <edge source="controllers.LoginController" target="gateways.UserGateway">
+      <point x="-7.0" y="-15.0" />
+      <point x="399.9499999999998" y="910.0" />
+      <point x="395.9499999999998" y="910.0" />
+      <point x="395.9499999999998" y="620.0" />
+      <point x="503.4316640085052" y="620.0" />
+      <point x="-56.66666666666663" y="15.0" />
+    </edge>
+    <edge source="entities.Admin" target="entities.User">
+      <point x="22.0" y="-15.0" />
+      <point x="437.7857660818702" y="90.0" />
+      <point x="502.5130388091429" y="90.0" />
+      <point x="-7.272727272727252" y="15.0" />
+    </edge>
+    <edge source="controllers.AdminController" target="gateways.UserAccountGateway">
+      <point x="30.0" y="-15.0" />
+      <point x="1247.1999999999998" y="850.0" />
+      <point x="1483.3816640085051" y="850.0" />
+      <point x="1483.3816640085051" y="570.0" />
+      <point x="910.6024327485368" y="570.0" />
+      <point x="16.0" y="15.0" />
+    </edge>
+    <edge source="gateways.RoomGateway" target="gateways.GatewayInterface">
+      <point x="-45.33333333333326" y="-15.0" />
+      <point x="1223.6166666666666" y="290.0" />
+      <point x="1095.5483306751719" y="290.0" />
+      <point x="14.666666666666742" y="15.0" />
+    </edge>
+    <edge source="gateways.MessageGateway" target="gateways.GatewayInterface">
+      <point x="-53.33333333333326" y="-15.0" />
+      <point x="1549.6166666666666" y="270.0" />
+      <point x="1154.2149973418384" y="270.0" />
+      <point x="73.33333333333326" y="15.0" />
+    </edge>
+    <edge source="controllers.AdminController" target="presenters.LoginPresenter">
+      <point x="6.0" y="-15.0" />
+      <point x="1223.1999999999998" y="830.0" />
+      <point x="1412.8816640085051" y="830.0" />
+      <point x="20.0" y="15.0" />
+    </edge>
+    <edge source="presenters.MessagePresenter" target="presenters.PresenterUtil">
+      <point x="-44.0" y="-15.0" />
+      <point x="1799.6666666666665" y="350.0" />
+      <point x="2039.1769941520456" y="350.0" />
+      <point x="-38.0" y="15.0" />
+    </edge>
+    <edge source="gateways.MessageGateway" target="usecases.MessageManager">
+      <point x="0.0" y="-15.0" />
+      <point x="1602.9499999999998" y="370.0" />
+      <point x="1594.8666666666666" y="370.0" />
+      <point x="-53.33333333333326" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="gateways.UserAccountGateway">
+      <point x="-58.947368421052715" y="-15.0" />
+      <point x="1514.9342955874524" y="540.0" />
+      <point x="942.6024327485368" y="540.0" />
+      <point x="48.0" y="15.0" />
+    </edge>
+    <edge source="controllers.OrganizerController" target="presenters.OrganizerPresenter">
+      <point x="25.0" y="-15.0" />
+      <point x="2570.6769941520456" y="910.0" />
+      <point x="2547.6769941520456" y="910.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="gateways.RoomGateway" target="usecases.RoomManager">
+      <point x="0.0" y="-15.0" />
+      <point x="1268.9499999999998" y="370.0" />
+      <point x="1262.8666666666666" y="370.0" />
+      <point x="-45.33333333333326" y="15.0" />
+    </edge>
+    <edge source="controllers.AdminController" target="gateways.UserGateway">
+      <point x="-30.0" y="-15.0" />
+      <point x="1187.1999999999998" y="740.0" />
+      <point x="548.7649973418385" y="740.0" />
+      <point x="-11.333333333333371" y="15.0" />
+    </edge>
+    <edge source="controllers.LoginController" target="presenters.LoginPresenter">
+      <point x="63.0" y="-15.0" />
+      <point x="469.9499999999998" y="810.0" />
+      <point x="1332.8816640085051" y="810.0" />
+      <point x="-60.0" y="15.0" />
+    </edge>
+    <edge source="controllers.AttendeeController" target="presenters.AttendeePresenter">
+      <point x="24.0" y="-15.0" />
+      <point x="1978.6666666666665" y="900.0" />
+      <point x="2130.1769941520456" y="900.0" />
+      <point x="-46.0" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="usecases.UserAccountManager">
+      <point x="-33.68421052631584" y="-15.0" />
+      <point x="1540.1974534821893" y="510.0" />
+      <point x="1092.2833333333333" y="510.0" />
+      <point x="1092.2833333333333" y="300.0" />
+      <point x="915.9357660818702" y="300.0" />
+      <point x="72.0" y="15.0" />
+    </edge>
+    <edge source="gateways.UserAccountGateway" target="usecases.UserAccountManager">
+      <point x="-64.0" y="-15.0" />
+      <point x="830.6024327485368" y="340.0" />
+      <point x="771.9357660818702" y="340.0" />
+      <point x="-72.0" y="15.0" />
+    </edge>
+    <edge source="usecases.RoomManager" target="entities.Room">
+      <point x="-45.33333333333326" y="-15.0" />
+      <point x="1262.8666666666666" y="200.0" />
+      <point x="1281.533333333333" y="200.0" />
+      <point x="-26.666666666666742" y="15.0" />
+    </edge>
+    <edge source="controllers.LoginController" target="gateways.LoginLogGateway">
+      <point x="-35.0" y="-15.0" />
+      <point x="371.9499999999998" y="880.0" />
+      <point x="238.44999999999982" y="880.0" />
+      <point x="-63.0" y="15.0" />
+    </edge>
+    <edge source="usecases.UserManager" target="entities.User">
+      <point x="20.399999999999977" y="-15.0" />
+      <point x="528.9357660818702" y="170.0" />
+      <point x="610.2857660818702" y="170.0" />
+      <point x="610.2857660818702" y="80.0" />
+      <point x="524.3312206273247" y="80.0" />
+      <point x="14.545454545454504" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="gateways.EventGateway">
+      <point x="0.0" y="-15.0" />
+      <point x="1573.8816640085051" y="470.0" />
+      <point x="1393.9499999999998" y="470.0" />
+      <point x="-36.0" y="15.0" />
+    </edge>
+    <edge source="controllers.OrganizerController" target="controllers.UserController">
+      <point x="-25.0" y="-15.0" />
+      <point x="2520.6769941520456" y="820.0" />
+      <point x="1643.8816640085051" y="820.0" />
+      <point x="70.0" y="15.0" />
+    </edge>
+    <edge source="presenters.UserPresenter" target="presenters.PresenterUtil">
+      <point x="-38.0" y="-15.0" />
+      <point x="2037.6666666666663" y="370.0" />
+      <point x="2069.5769941520457" y="370.0" />
+      <point x="-7.599999999999909" y="15.0" />
+    </edge>
+    <edge source="controllers.AdminController" target="usecases.LoginLogManager">
+      <point x="-54.0" y="-15.0" />
+      <point x="1163.1999999999998" y="760.0" />
+      <point x="406.9499999999998" y="760.0" />
+      <point x="406.9499999999998" y="600.0" />
+      <point x="157.5" y="600.0" />
+      <point x="63.0" y="15.0" />
+    </edge>
+    <edge source="gateways.UserAccountGateway" target="gateways.GatewayInterface">
+      <point x="64.0" y="-15.0" />
+      <point x="958.6024327485368" y="370.0" />
+      <point x="1066.2149973418384" y="370.0" />
+      <point x="-14.666666666666742" y="15.0" />
+    </edge>
+    <edge source="controllers.LoginController" target="usecases.UserManager">
+      <point x="-49.0" y="-15.0" />
+      <point x="357.9499999999998" y="890.0" />
+      <point x="206.94999999999982" y="890.0" />
+      <point x="206.94999999999982" y="340.0" />
+      <point x="454.1357660818702" y="340.0" />
+      <point x="-54.39999999999998" y="15.0" />
+    </edge>
+    <edge source="presenters.AttendeePresenter" target="presenters.UserPresenter">
+      <point x="46.0" y="-15.0" />
+      <point x="2222.1769941520456" y="640.0" />
+      <point x="2104.166666666666" y="640.0" />
+      <point x="28.5" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="usecases.MessageManager">
+      <point x="42.1052631578948" y="-15.0" />
+      <point x="1615.9869271664" y="570.0" />
+      <point x="1693.4499999999998" y="570.0" />
+      <point x="1693.4499999999998" y="370.0" />
+      <point x="1701.533333333333" y="370.0" />
+      <point x="53.33333333333326" y="15.0" />
+    </edge>
+    <edge source="usecases.MessageManager" target="entities.MessageThread">
+      <point x="0.0" y="-15.0" />
+      <point x="-50.66666666666674" y="15.0" />
+    </edge>
+    <edge source="usecases.UserManager" target="entities.Attendee">
+      <point x="34.0" y="-15.0" />
+      <point x="542.5357660818702" y="180.0" />
+      <point x="648.7857660818702" y="180.0" />
+      <point x="-28.0" y="15.0" />
+    </edge>
+    <edge source="usecases.EventManager" target="entities.Event">
+      <point x="-48.0" y="-15.0" />
+      <point x="1423.1999999999998" y="200.0" />
+      <point x="1441.8666666666666" y="200.0" />
+      <point x="-29.333333333333258" y="15.0" />
+    </edge>
+    <edge source="presenters.LoginPresenter" target="presenters.PresenterUtil">
+      <point x="-40.0" y="-15.0" />
+      <point x="1352.8816640085051" y="580.0" />
+      <point x="1734.1666666666665" y="580.0" />
+      <point x="1734.1666666666665" y="330.0" />
+      <point x="2008.7769941520455" y="330.0" />
+      <point x="-68.40000000000009" y="15.0" />
+    </edge>
+    <edge source="gateways.UserGateway" target="gateways.GatewayInterface">
+      <point x="45.33333333333337" y="-15.0" />
+      <point x="605.4316640085052" y="360.0" />
+      <point x="1036.8816640085051" y="360.0" />
+      <point x="-44.0" y="15.0" />
+    </edge>
+    <edge source="presenters.AdminPresenter" target="presenters.UserPresenter">
+      <point x="-40.0" y="-15.0" />
+      <point x="1944.1769941520456" y="640.0" />
+      <point x="2047.1666666666663" y="640.0" />
+      <point x="-28.5" y="15.0" />
+    </edge>
+    <edge source="controllers.AdminController" target="gateways.LoginLogGateway">
+      <point x="-78.0" y="-15.0" />
+      <point x="1139.1999999999998" y="780.0" />
+      <point x="322.4499999999998" y="780.0" />
+      <point x="21.0" y="15.0" />
+    </edge>
+    <edge source="presenters.OrganizerPresenter" target="presenters.PresenterUtil">
+      <point x="0.0" y="-15.0" />
+      <point x="2595.6769941520456" y="650.0" />
+      <point x="2622.1769941520456" y="650.0" />
+      <point x="2622.1769941520456" y="340.0" />
+      <point x="2130.3769941520454" y="340.0" />
+      <point x="53.19999999999982" y="15.0" />
+    </edge>
+    <edge source="entities.MessageThread" target="entities.Message">
+      <point x="-38.0" y="-15.0" />
+      <point x="1660.8666666666666" y="90.0" />
+      <point x="1643.6166666666666" y="90.0" />
+      <point x="13.0" y="15.0" />
+    </edge>
+    <edge source="usecases.LoginLogManager" target="entities.LoginLog">
+      <point x="-56.0" y="-15.0" />
+      <point x="38.5" y="370.0" />
+      <point x="57.16666666666674" y="370.0" />
+      <point x="-37.333333333333336" y="15.0" />
+    </edge>
+    <edge source="gateways.LoginLogGateway" target="gateways.GatewayInterface">
+      <point x="56.0" y="-15.0" />
+      <point x="357.4499999999998" y="610.0" />
+      <point x="434.84833067517184" y="610.0" />
+      <point x="434.84833067517184" y="350.0" />
+      <point x="1007.5483306751719" y="350.0" />
+      <point x="-73.33333333333326" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="presenters.MessagePresenter">
+      <point x="50.526315789473756" y="-15.0" />
+      <point x="1624.407979797979" y="600.0" />
+      <point x="1799.6666666666665" y="600.0" />
+      <point x="-44.0" y="15.0" />
+    </edge>
+    <edge source="usecases.UserAccountManager" target="entities.UserAccount">
+      <point x="-64.0" y="-15.0" />
+      <point x="779.9357660818702" y="200.0" />
+      <point x="798.6024327485368" y="200.0" />
+      <point x="-45.33333333333337" y="15.0" />
+    </edge>
+    <edge source="controllers.SpeakerController" target="controllers.UserController">
+      <point x="-23.0" y="-15.0" />
+      <point x="2310.6769941520456" y="840.0" />
+      <point x="1603.8816640085051" y="840.0" />
+      <point x="30.0" y="15.0" />
+    </edge>
+    <edge source="entities.Organizer" target="entities.User">
+      <point x="30.0" y="-15.0" />
+      <point x="569.7857660818702" y="90.0" />
+      <point x="517.0584933545974" y="90.0" />
+      <point x="7.272727272727252" y="15.0" />
+    </edge>
+    <edge source="gateways.LoginLogGateway" target="usecases.LoginLogManager">
+      <point x="-56.0" y="-15.0" />
+      <point x="245.44999999999982" y="650.0" />
+      <point x="73.5" y="650.0" />
+      <point x="-21.0" y="15.0" />
+    </edge>
+    <edge source="entities.Room" target="entities.SerializableComparator">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="presenters.UserPresenter">
+      <point x="67.36842105263167" y="-15.0" />
+      <point x="1641.2500850611368" y="620.0" />
+      <point x="2009.1666666666663" y="620.0" />
+      <point x="-66.5" y="15.0" />
+    </edge>
+    <edge source="usecases.UserManager" target="entities.Organizer">
+      <point x="-6.7999999999999545" y="-15.0" />
+      <point x="501.7357660818702" y="200.0" />
+      <point x="509.7857660818702" y="200.0" />
+      <point x="-30.0" y="15.0" />
+    </edge>
+    <edge source="entities.Speaker" target="entities.User">
+      <point x="26.0" y="-15.0" />
+      <point x="325.7857660818702" y="70.0" />
+      <point x="487.9675842636884" y="70.0" />
+      <point x="-21.818181818181813" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="gateways.UserGateway">
+      <point x="-75.78947368421063" y="-15.0" />
+      <point x="1498.0921903242945" y="560.0" />
+      <point x="594.0983306751718" y="560.0" />
+      <point x="34.0" y="15.0" />
+    </edge>
+    <edge source="presenters.SpeakerPresenter" target="presenters.PresenterUtil">
+      <point x="58.666666666666515" y="-15.0" />
+      <point x="2438.343660818712" y="650.0" />
+      <point x="2471.5892897394997" y="650.0" />
+      <point x="2471.5892897394997" y="350.0" />
+      <point x="2115.1769941520456" y="350.0" />
+      <point x="38.0" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="usecases.UserManager">
+      <point x="-42.1052631578948" y="-15.0" />
+      <point x="1531.7764008506103" y="520.0" />
+      <point x="1002.2690994152035" y="520.0" />
+      <point x="1002.2690994152035" y="320.0" />
+      <point x="562.9357660818702" y="320.0" />
+      <point x="54.39999999999998" y="15.0" />
+    </edge>
+    <edge source="usecases.UserManager" target="entities.Admin">
+      <point x="-34.0" y="-15.0" />
+      <point x="474.5357660818702" y="180.0" />
+      <point x="393.7857660818702" y="180.0" />
+      <point x="-22.0" y="15.0" />
+    </edge>
+    <edge source="controllers.AdminController" target="usecases.UserManager">
+      <point x="-42.0" y="-15.0" />
+      <point x="1175.1999999999998" y="750.0" />
+      <point x="481.59833067517184" y="750.0" />
+      <point x="-27.200000000000045" y="15.0" />
+    </edge>
+    <edge source="gateways.EventGateway" target="usecases.EventManager">
+      <point x="0.0" y="-15.0" />
+      <point x="1429.9499999999998" y="370.0" />
+      <point x="1423.1999999999998" y="370.0" />
+      <point x="-48.0" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="usecases.RoomManager">
+      <point x="-8.42105263157896" y="-15.0" />
+      <point x="1565.4606113769262" y="480.0" />
+      <point x="1347.4499999999998" y="480.0" />
+      <point x="1347.4499999999998" y="370.0" />
+      <point x="1353.533333333333" y="370.0" />
+      <point x="45.33333333333326" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="gateways.MessageGateway">
+      <point x="25.263157894736878" y="-15.0" />
+      <point x="1599.144821903242" y="440.0" />
+      <point x="1562.9499999999998" y="440.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+    <edge source="controllers.LoginController" target="gateways.UserAccountGateway">
+      <point x="21.0" y="-15.0" />
+      <point x="428.9499999999998" y="640.0" />
+      <point x="814.6024327485368" y="640.0" />
+      <point x="-80.0" y="15.0" />
+    </edge>
+    <edge source="entities.Attendee" target="entities.User">
+      <point x="28.0" y="-15.0" />
+      <point x="704.7857660818702" y="60.0" />
+      <point x="538.8766751727793" y="60.0" />
+      <point x="29.090909090909122" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="usecases.EventManager">
+      <point x="16.84210526315792" y="-15.0" />
+      <point x="1590.723769271663" y="450.0" />
+      <point x="1512.4499999999998" y="450.0" />
+      <point x="1512.4499999999998" y="370.0" />
+      <point x="1519.1999999999998" y="370.0" />
+      <point x="48.0" y="15.0" />
+    </edge>
+    <edge source="controllers.LoginController" target="usecases.UserAccountManager">
+      <point x="49.0" y="-15.0" />
+      <point x="455.9499999999998" y="800.0" />
+      <point x="1029.9649973418386" y="800.0" />
+      <point x="1029.9649973418386" y="310.0" />
+      <point x="867.9357660818702" y="310.0" />
+      <point x="24.0" y="15.0" />
+    </edge>
+    <edge source="gateways.UserGateway" target="usecases.UserManager">
+      <point x="-45.33333333333337" y="-15.0" />
+      <point x="514.7649973418385" y="340.0" />
+      <point x="508.5357660818702" y="340.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="usecases.MessageManager" target="entities.Message">
+      <point x="-32.0" y="-15.0" />
+      <point x="1616.1999999999998" y="190.0" />
+      <point x="1573.8666666666666" y="190.0" />
+      <point x="1573.8666666666666" y="90.0" />
+      <point x="1617.6166666666666" y="90.0" />
+      <point x="-13.0" y="15.0" />
+    </edge>
+    <edge source="controllers.AdminController" target="controllers.UserController">
+      <point x="54.0" y="-15.0" />
+      <point x="1271.1999999999998" y="870.0" />
+      <point x="1523.8816640085051" y="870.0" />
+      <point x="-50.0" y="15.0" />
+    </edge>
+    <edge source="controllers.UserController" target="gateways.RoomGateway">
+      <point x="-25.263157894736878" y="-15.0" />
+      <point x="1548.6185061137683" y="500.0" />
+      <point x="1234.9499999999998" y="500.0" />
+      <point x="-34.0" y="15.0" />
+    </edge>
+    <edge source="controllers.SpeakerController" target="presenters.SpeakerPresenter">
+      <point x="23.0" y="-15.0" />
+      <point x="2356.6769941520456" y="910.0" />
+      <point x="2335.6769941520456" y="910.0" />
+      <point x="-44.0" y="15.0" />
+    </edge>
+    <edge source="presenters.SpeakerPresenter" target="presenters.UserPresenter">
+      <point x="-58.666666666666515" y="-15.0" />
+      <point x="2321.010327485379" y="630.0" />
+      <point x="2123.166666666666" y="630.0" />
+      <point x="47.5" y="15.0" />
+    </edge>
+    <edge source="controllers.AttendeeController" target="controllers.UserController">
+      <point x="-72.0" y="-15.0" />
+      <point x="1882.6666666666665" y="870.0" />
+      <point x="1543.8816640085051" y="870.0" />
+      <point x="-30.0" y="15.0" />
+    </edge>
+    <edge source="controllers.AdminController" target="presenters.AdminPresenter">
+      <point x="66.0" y="-15.0" />
+      <point x="1283.1999999999998" y="880.0" />
+      <point x="1944.1769941520456" y="880.0" />
+      <point x="-40.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3444335330409301" x="1248.5304548259853" y="593.4872980700538" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
